@@ -1,0 +1,118 @@
+.container {
+  max-width: 1390px;
+  margin: auto;
+  padding: 0px 5px;
+}
+
+.main_filter {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.main_filter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.filter_card {
+  margin: 15px 12px;
+  overflow: hidden;
+  height: 170px;
+  width: 320px;
+  background: #4f66cf;
+  color: #ffffff;
+  border-radius: 32px;
+  position: relative;
+  transition-duration: 0.4s;
+}
+.filter_card img {
+  z-index: 1;
+}
+
+.filter_card:hover {
+  border: 1px solid #4ac692;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card_label {
+  position: absolute;
+  z-index: 2;
+  top: 110px;
+  margin-left: 30px;
+}
+
+.text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  position: relative;
+}
+
+.card_title::before,
+.card_title::after {
+  content: "";
+  height: 4px;
+  width: 13px;
+  background-color: white;
+  position: absolute;
+}
+
+.card_title::before {
+  top: 6px;
+  transform: rotate(45deg);
+  left: 245px;
+}
+
+.card_title::after {
+  top: 14px;
+  left: 245px;
+  transform: rotate(-45deg);
+}
+
+.corporate {
+  background-color: #fc992c;
+}
+
+.festival {
+  background-color: #5bd262;
+}
+
+.city_day {
+  background-color: #f97caf;
+}
+
+.promotion {
+  background-color: #fadc96;
+  color: black;
+}
+.promotion .card-title::before,
+.promotion .card-title::after {
+  background-color: black;
+}
+
+.birthday {
+  background-color: #7d48db;
+}
+
+@media (max-width: 425px) {
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0px;
+  }
+
+  .main_filter {
+    justify-content: center;
+  }
+}
