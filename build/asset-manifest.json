@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44df0c49.css",
+    "main.js": "/static/js/main.9f702daf.js",
+    "static/media/Festival-card.png": "/static/media/Festival-card.64bc4b005f612d6ddc67.png",
+    "static/media/Birthday-card.png": "/static/media/Birthday-card.ca60818784bb792a10af.png",
+    "static/media/City-day-card.png": "/static/media/City-day-card.4dacd6cef1fe2162a7a4.png",
+    "static/media/logo1.png": "/static/media/logo1.d609a1791cafdaf22b53.png",
+    "static/media/Promotion-card.png": "/static/media/Promotion-card.fe54ba34a70cfdb0795d.png",
+    "static/media/Child-party-card.png": "/static/media/Child-party-card.495dc57c15d0e92a08a6.png",
+    "static/media/Corporate-card.png": "/static/media/Corporate-card.09fb79f46d2f32af1472.png",
+    "index.html": "/index.html",
+    "static/media/rhomb.svg": "/static/media/rhomb.4d82e944b0bd5cc2b0c0.svg",
+    "main.44df0c49.css.map": "/static/css/main.44df0c49.css.map",
+    "main.9f702daf.js.map": "/static/js/main.9f702daf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44df0c49.css",
+    "static/js/main.9f702daf.js"
+  ]
+}
