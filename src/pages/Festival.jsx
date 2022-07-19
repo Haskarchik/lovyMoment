@@ -18,7 +18,7 @@ const Festival = () => {
         <div className={allEntertimentsStyle.entertiment_label}>
           <h2>Розваги для Фестивалю</h2>
         </div>
-        <ProductCard props={{ tag: "festival" }} />
+        <ProductCard props={{ tag: "Festival" }} />
       </div>
       
     </div>

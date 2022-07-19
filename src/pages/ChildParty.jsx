@@ -18,7 +18,7 @@ const ChildParty = () => {
       <div className={allEntertimentsStyle.entertiment_label}>
         <h2>Розваги для Дитячого Свята</h2>
       </div>
-      <ProductCard props={{tag:"child-party"}} />
+      <ProductCard props={{tag:"Child-party"}} />
     </div>
     </div>
   );

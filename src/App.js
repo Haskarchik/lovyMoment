@@ -22,25 +22,20 @@ const mainpage = [
 ];
 
 function App() {
-   const [takedLink, setLink] = useState("");
-    
+  const [takedLink, setLink] = useState("");
 
-    
   function updateData(name) {
     setLink(name);
   }
 
-  
   return (
     <div className="app">
-      
       <Routes>
-
         <Route path="/" element={mainpage} />
-      
-      
-       <Route path="/Page/:id" element={<Page/>} />
+
+        <Route path="/Page/:id" element={<Page />} />
         
+
         <Route
           path="Corporate"
           element={<Corporate updateDatas={updateData} />}
@@ -62,12 +57,9 @@ function App() {
           path="Festival"
           element={<Festival updateDatas={updateData} />}
         />
-            
-       
-
       </Routes>
-      <Caller/>
-      <Notification/>
+      <Caller />
+      <Notification />
       <Footer />
     </div>
   );

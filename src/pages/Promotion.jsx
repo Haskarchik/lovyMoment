@@ -23,7 +23,7 @@ const Promotion = ({ updateDatas }) => {
       <div className={allEntertimentsStyle.entertiment_label}>
         <h2>Розваги для Промоакції</h2>
       </div>
-      <ProductCard props={{tag:"promotion"}} />
+      <ProductCard props={{tag:"Promotion"}} />
     </div>
     </div>
   );

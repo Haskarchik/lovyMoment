@@ -1,5 +1,4 @@
 import React from "react";
-import { CATALOG } from "../../constants/Catalog.constant";
 import { Link } from "react-router-dom";
 import Swiper from "../swiper/Swiper";
 import "../../styles/entirementsPage.css";

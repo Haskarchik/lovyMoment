@@ -18,7 +18,7 @@ const CityDay = () => {
       <div className={allEntertimentsStyle.entertiment_label}>
         <h2>Розваги для Дня Міста</h2>
       </div>
-      <ProductCard props={{tag:"city-day"}} />
+      <ProductCard props={{tag:"City-day"}} />
     </div>
     </div>
   );

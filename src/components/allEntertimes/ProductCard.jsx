@@ -30,12 +30,12 @@ export default function ProductCard(props) {
 
   let card = [];
   let tagName = props.props.tag;
-
+  
   for (let i = 0; i < todos.length; i++) {
     if (todos.length > 0) {
       if (todos[i].tags.includes(tagName) || tagName === "all") {
         card.push(
-          <NavLink key={todos[i].id + Math.random()} to={"Page/" + todos[i].id}>
+          <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
             <div className={allEntirementsStyle.entertiment_card}>
               <Image link={todos[i].img}></Image>
               <div className={allEntirementsStyle.gradiant}>

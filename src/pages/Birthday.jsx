@@ -17,7 +17,7 @@ const Birthday  = () => {
       <div className={allEntertimentsStyle.entertiment_label}>
         <h2>Розваги для Дня народження</h2>
       </div>
-      <ProductCard props={{tag:"birthday"}} />
+      <ProductCard props={{tag:"Birthday"}} />
       </div>
     </div>
   );

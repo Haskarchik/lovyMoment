@@ -18,7 +18,7 @@ const Corporate = () => {
       <div className={allEntertimentsStyle.entertiment_label}>
         <h2>Розваги для Корпоративу</h2>
       </div>
-      <ProductCard props={{tag:"corporate"}} />
+      <ProductCard props={{tag:"Corporate"}} />
     </div>
     </div>
   );
