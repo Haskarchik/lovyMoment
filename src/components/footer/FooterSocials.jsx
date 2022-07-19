@@ -19,7 +19,7 @@ export default function FooterSocials() {
         </a>
       </li>
       <li>
-        <a href="https://t.me/haskarchik">
+        <a href="https://t.me/lovymomentlviv">
         <SvgSelectors id={'telegram'}
           />Telegram
         </a>

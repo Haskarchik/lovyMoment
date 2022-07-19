@@ -1,5 +1,6 @@
 import React from "react";
 import allEntirementsStyle from '../../styles/allEntertiments.module.css'
+
 export default function EntertimentLabel(props) {
 
   return (

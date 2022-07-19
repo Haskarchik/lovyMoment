@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-
 import "./styles/app.css";
 import Header from "./components/header/Header";
 import SeactionBlock from "./components/seactionBlock/SeactionBlock";

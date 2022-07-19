@@ -7,6 +7,14 @@ import { CATALOG } from "../../constants/Catalog.constant";
 import Image from "../Image";
 
 export default function AllEntertiments() {
+
+
+
+
+
+
+
+  
   const [moreCards, setMoreCard] = useState(" ");
 
   function moreCard() {
@@ -16,7 +24,7 @@ export default function AllEntertiments() {
       card.push(
         <a key={item.id + Math.random()} href={item.id}>
           <div className={allEntirementsStyle.entertiment_card}>
-            <Image link={item.img}></Image>
+            <img src={item.img}></img>
             <div className={allEntirementsStyle.gradiant}>
               <div className={allEntirementsStyle.more_btn}>Деталі</div>
               <div className={allEntirementsStyle.entertiment_card_label}>

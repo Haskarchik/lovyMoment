@@ -23,7 +23,7 @@ const NavBar = (props) => {
             </a>
           </li>
           <li key='telegram'>
-            <a href="#">
+            <a href="https://t.me/lovymomentlviv">
               <SvgSelectors className={header.social_icon} id="telegram" />
             </a>
           </li>
