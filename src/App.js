@@ -15,6 +15,7 @@ import AllEntertiments from "./components/allEntertimes/AllEntertiments";
 import Minion from "./pages/productPages/Minion";
 import Caller from "./components/UI/Caller";
 import Notification from "./components/UI/Notification";
+import Page from "./pages/productPages/Page";
 
 const mainpage = [
   <Header></Header>,
@@ -40,6 +41,7 @@ function App() {
         <Route path="/" element={mainpage} />
        <Route path="/Briz" element={<Briz/>} />
        <Route path="/Minion" element={<Minion/>} />
+       <Route path="/Page/:id" element={<Page/>} />
         
         <Route
           path="Corporate"

@@ -99,7 +99,7 @@ export default function ProductPage() {
               <div className="min-order">
                 Мінімальне замовлення <span> {price}</span>
               </div>
-              <video src="https://youtu.be/kyGtbRBr5r0"></video>
+              
               <div id="tegs" className="tegs">
                 {tagsTranslate()}
               </div>
