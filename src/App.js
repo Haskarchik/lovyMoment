@@ -10,9 +10,7 @@ import Promotion from "./pages/Promotion";
 import Birthday from "./pages/Birthday";
 import ChildParty from "./pages/ChildParty";
 import CityDay from "./pages/CityDay";
-import Briz from "./pages/productPages/Briz";
 import AllEntertiments from "./components/allEntertimes/AllEntertiments";
-import Minion from "./pages/productPages/Minion";
 import Caller from "./components/UI/Caller";
 import Notification from "./components/UI/Notification";
 import Page from "./pages/productPages/Page";
@@ -39,8 +37,8 @@ function App() {
       <Routes>
 
         <Route path="/" element={mainpage} />
-       <Route path="/Briz" element={<Briz/>} />
-       <Route path="/Minion" element={<Minion/>} />
+      
+      
        <Route path="/Page/:id" element={<Page/>} />
         
         <Route

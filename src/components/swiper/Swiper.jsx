@@ -2,13 +2,14 @@
 import { Navigation, Pagination, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default (props) => {
+
   return (
     <Swiper
       // install Swiper modules
@@ -17,9 +18,12 @@ export default (props) => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+     // onSwiper={(swiper) => console.log(swiper)}
+    //  onSlideChange={() => console.log("slide change")}
     >
+      <SwiperSlide>
+        <img src={props.props[0]} alt="" />
+      </SwiperSlide>
       <SwiperSlide>
         <img src={props.props[1]} alt="" />
       </SwiperSlide>
@@ -27,11 +31,18 @@ export default (props) => {
         <img src={props.props[2]} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src= {props.props[3]} alt="" />
+     
+        <img src={props.props[3]} alt="" />
       </SwiperSlide>
-      <SwiperSlide> <img src={props.props[4]} alt="" /></SwiperSlide>
-      <SwiperSlide> <ReactPlayer  controls= {true} width='100%' height='95%' url='https://youtu.be/nOl1fV3GKqI' /> </SwiperSlide>
-
+      <SwiperSlide>
+      
+        <ReactPlayer
+          controls={true}
+          width="100%"
+          height="95%"
+          url="https://youtu.be/nOl1fV3GKqI"
+        />{" "}
+      </SwiperSlide>
       ...
     </Swiper>
   );

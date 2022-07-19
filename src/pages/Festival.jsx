@@ -1,12 +1,9 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
 import NavBar from "../components/header/NavBar";
 import HeaderButtons from "../components/header/HeaderButtons";
 import ProductCard from "../components/allEntertimes/ProductCard";
 import header from "../styles/header.module.css";
 import allEntertimentsStyle from "../styles/allEntertiments.module.css";
-import Briz from "./productPages/Briz";
-import Minion from "./productPages/Minion";
 
 const Festival = () => {
   return (

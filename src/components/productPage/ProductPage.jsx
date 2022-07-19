@@ -3,14 +3,46 @@ import { CATALOG } from "../../constants/Catalog.constant";
 import { Link } from "react-router-dom";
 import Swiper from "../swiper/Swiper";
 import "../../styles/entirementsPage.css";
+import { useState, useEffect } from "react";
+import { db } from "../../constants/firebase";
+import { onValue, ref } from "firebase/database";
 
-const pageName = window.location.pathname.slice(1);
-export default function ProductPage() {
+export default function ProductPage(props) {
+  const [todos, setTodos] = useState([]);
+  const [isInitialRender, setIsInitialRender] = useState(true);
+  //read
+  useEffect(() => {
+    onValue(ref(db), (snapshot) => {
+      const data = snapshot.val();
+      if (isInitialRender) {
+        setIsInitialRender(false);
+        setTodos([]);
+      }
+      if (data !== null && data !== 0) {
+        Object.values(data).map((todo) => {
+          if (isInitialRender) {
+            setIsInitialRender(false);
+            setTodos((oldArray) => [...oldArray, todo]);
+          }
+        });
+      }
+    });
+  });
+
   let page = [];
 
-  CATALOG.forEach(
-    ({ name,albom, img, price, tags, id, descriptions, complactation, varning }) => {
-      if (id === pageName) {
+  todos.forEach(
+    ({
+      name,
+      albom,
+      price,
+      tags,
+      id,
+      descriptions,
+      complactation,
+      varning,
+    }) => {
+      if (id === props.id.id) {
         function tagsTranslate() {
           let tagHtml = [];
           tags.forEach((el) => {
@@ -99,7 +131,7 @@ export default function ProductPage() {
               <div className="min-order">
                 Мінімальне замовлення <span> {price}</span>
               </div>
-              
+
               <div id="tegs" className="tegs">
                 {tagsTranslate()}
               </div>

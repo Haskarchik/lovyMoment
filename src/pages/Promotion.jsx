@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../components/header/NavBar";
 import HeaderButtons from "../components/header/HeaderButtons";
 import ProductCard from "../components/allEntertimes/ProductCard";
