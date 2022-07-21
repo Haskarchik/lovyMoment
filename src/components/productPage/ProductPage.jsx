@@ -125,9 +125,15 @@ export default function ProductPage(props) {
 
           return varningHtml;
         }
+        console.log(quantityvar);
        
         function quantity() {
-          let quantityHtnm = (
+          let quantityHtnm 
+          if (quantityvar == { } || quantityvar == " " || quantityvar == undefined) {
+            quantityHtnm = ` `;
+          }
+          else{
+            quantityHtnm=(
             <div className="quantity">
                 <div className="quantity-card  ">
                   <div className="number orange">{quantityvar.One.for}</div>
@@ -142,11 +148,8 @@ export default function ProductPage(props) {
                   <p>{'Кількість ' + quantityvar.Three.name}</p>
                 </div>
             </div>
-          );
-          if (quantityvar == "" || quantityvar == " " || quantityvar == undefined) {
-            quantityHtnm = ``;
+            );
           }
-
           return quantityHtnm;
         }
         page.push(
