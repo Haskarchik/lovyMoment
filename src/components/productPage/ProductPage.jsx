@@ -38,6 +38,7 @@ export default function ProductPage(props) {
       tags,
       id,
       video,
+      quantityvar,
       descriptions,
       complactation,
       varning,
@@ -124,6 +125,30 @@ export default function ProductPage(props) {
 
           return varningHtml;
         }
+       
+        function quantity() {
+          let quantityHtnm = (
+            <div className="quantity">
+                <div className="quantity-card  ">
+                  <div className="number orange">{quantityvar.One.for}</div>
+                  <p>{'Кількість ' + quantityvar.One.name}</p>
+                </div>
+                <div className="quantity-card  ">
+                  <div className="number purple">{quantityvar.Two.for}</div>
+                  <p>{'Кількість ' + quantityvar.Two.name}</p>
+                </div>
+                <div className="quantity-card  ">
+                  <div className="number green">{quantityvar.Three.for}</div>
+                  <p>{'Кількість ' + quantityvar.Three.name}</p>
+                </div>
+            </div>
+          );
+          if (quantityvar == "" || quantityvar == " " || quantityvar == undefined) {
+            quantityHtnm = ``;
+          }
+
+          return quantityHtnm;
+        }
         page.push(
           <div>
             <Swiper props={{albom: albom,
@@ -144,16 +169,10 @@ export default function ProductPage(props) {
               </div>
               {complact()}
               {varningBlock()}
-              <div className="quantity">
-                <div className="quantity-card players ">
-                  <div className="number player">2</div>
-                  <p>Кількість гравців</p>
-                </div>
-                <div className="quantity-card trampoline ">
-                  <div className="number jump">4</div>
-                  <p>Кількість батутів</p>
-                </div>
-              </div>
+              
+                {quantity()}
+              
+              
             </div>
           </div>
         );

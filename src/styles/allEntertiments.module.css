@@ -157,11 +157,15 @@
 }
 
 /************************************/
+@media (max-width: 768px) {
+  .entertiment_row {
+    justify-content: center;
+  }
+}
 @media (max-width: 425px) {
   .main_filter {
     justify-content: center;
   }
-
   .entertiment_label h2 {
     font-size: 40px;
     line-height: 40px;
@@ -169,7 +173,6 @@
   .entertiment_label h2 span {
     display: block;
   }
-
   .entertiment_row {
     justify-content: center;
   }

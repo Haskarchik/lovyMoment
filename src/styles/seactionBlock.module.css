@@ -105,6 +105,11 @@
   background-color: #7d48db;
 }
 
+@media (max-width: 768px) {
+  .main_filter {
+    justify-content: center;
+  }
+}
 @media (max-width: 425px) {
   .text {
     font-size: 12px;

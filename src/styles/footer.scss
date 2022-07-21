@@ -83,6 +83,14 @@
   }
 }
 /************************************/
+@media (max-width:768px) {
+ 
+  .footer-socials-list{
+    width: 320px;
+  }
+}
+
+
 @media (max-width: 425px) {
   .footer-row {
     flex-direction: column;

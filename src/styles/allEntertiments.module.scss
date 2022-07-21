@@ -194,6 +194,12 @@
   background-color: #4f66cf;
 }
 /************************************/
+@media (max-width:768px) {
+  .entertiment_row{
+    justify-content: center;
+  }
+  
+}
 @media (max-width: 425px) {
   .main_filter {
     justify-content: center;

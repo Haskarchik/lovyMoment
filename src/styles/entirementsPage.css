@@ -277,39 +277,30 @@
 }
 
 .quantity-card {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #070d26;
   display: flex;
   align-items: center;
   margin: 12.5px 0px;
   margin-right: 120px;
 }
-
-.players p {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+.quantity-card p {
+  min-width: 150px;
 }
 
-.player {
+.orange {
   background-color: #fc992c;
 }
 
-.trampoline {
-  margin-left: 0px;
-  display: flex;
-  align-items: center;
-}
-.trampoline p {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+.purple {
+  background-color: #7d48db;
 }
 
-.jump {
-  background-color: #7d48db;
+.green {
+  background-color: #5bd262;
 }
 
 .number {
@@ -325,20 +316,24 @@
   margin-right: 15px;
 }
 
+/************************************/
+@media (max-width: 768px) {
+  .swiper {
+    max-width: 740px;
+  }
+}
 @media (max-width: 425px) {
   .container {
     max-width: 415px;
     margin: auto;
     padding: 0px;
   }
-
   .swiper-slide img {
     height: 100%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-
   .page-text-part {
     padding: 0px 5px;
     z-index: 5;
@@ -347,28 +342,29 @@
     top: -24px;
     border-radius: 24px 24px 0px 0px;
   }
-
   .important {
     padding-bottom: 25px;
-    width: 320px;
+    width: 90vw;
   }
-
   .important-label {
     margin-bottom: 10px;
   }
-
   .quantity {
     max-width: 320px;
   }
-
   .swiper {
     margin-top: 0px;
     border-radius: 0px;
     left: -5px;
     width: 100vw;
   }
-
   .swiper-slide img {
     border-radius: 0px;
+  }
+  .quantity {
+    margin-left: 10px;
+  }
+  .complact-list {
+    margin-left: 5px;
   }
 }

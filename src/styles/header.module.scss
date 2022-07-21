@@ -135,6 +135,14 @@
 }
 
 /************************************/
+@media (max-width:768px) {
+  .tel_number{
+    a{
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }  
+}
 @media (max-width: 425px) {
   .container{
     padding: 0px 5px;

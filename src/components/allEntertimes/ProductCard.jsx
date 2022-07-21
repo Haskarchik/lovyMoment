@@ -56,11 +56,7 @@ export default function ProductCard(props) {
 
   return (
     <div id="entertiment-row" className={allEntirementsStyle.entertiment_row}>
-      {todos.map((todo) => (
-        <>
-          <h1>{todo.todo} </h1>
-        </>
-      ))}
+      
       {card}
       {props.props.more}
     </div>
