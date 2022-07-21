@@ -14,7 +14,7 @@ export default function SeactionBlock() {
               seactionBlockStyles.filter_card +
               " " +
               seactionBlockStyles.child_party,
-            link: "ChildParty",
+            link: "Child-party",
           }}
         />
         <SeactionCard
@@ -50,7 +50,7 @@ export default function SeactionBlock() {
               " " +
               seactionBlockStyles.city_day +
               " ",
-            link: "CityDay",
+            link: "City-day",
           }}
         />
         <SeactionCard

@@ -49,10 +49,10 @@ function App() {
           element={<Birthday updateDatas={updateData} />}
         />
         <Route
-          path="ChildParty"
+          path="Child-party"
           element={<ChildParty updateDatas={updateData} />}
         />
-        <Route path="CityDay" element={<CityDay updateDatas={updateData} />} />
+        <Route path="City-day" element={<CityDay updateDatas={updateData} />} />
         <Route
           path="Festival"
           element={<Festival updateDatas={updateData} />}

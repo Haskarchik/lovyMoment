@@ -44,50 +44,52 @@ export default function ProductPage(props) {
     }) => {
       if (id === props.id.id) {
         function tagsTranslate() {
+          
           let tagHtml = [];
           tags.forEach((el) => {
             if (el !== undefined) {
-              if (el.includes("corporate")) {
+              if (el.includes("Corporate")) {
                 tagHtml.push(
-                  <Link to=" " className="tag corporatePage">
+                  <Link to="/Corporate" className="tag corporatePage">
                     {" "}
                     Корпоратив
                   </Link>
                 );
-              } else if (el.includes("festival")) {
+              } else if (el.includes("Festival")) {
                 tagHtml.push(
-                  <Link to=" " className="tag festivalPage">
+                  <Link to="/Festival" className="tag festivalPage">
                     {" "}
                     Фестиваль
                   </Link>
                 );
-              } else if (el.includes("promotion")) {
+              } else if (el.includes("Promotion")) {
                 tagHtml.push(
-                  <Link to=" " className="tag promotionPage">
+                  <Link to="/Promotion" className="tag promotionPage">
                     {" "}
                     Промоакція
                   </Link>
                 );
-              } else if (el.includes("city-day")) {
+              } else if (el.includes("City-day")) {
                 tagHtml.push(
-                  <Link to=" " className="tag city-dayPage">
+                  <Link to="/City-day" className="tag city-dayPage">
                     {" "}
                     День міста
                   </Link>
                 );
-              } else if (el.includes("child-party")) {
+              } else if (el.includes("Child-party")) {
                 tagHtml.push(
-                  <Link to=" " className="tag child-partyPage">
-                    {" "}
+                  <Link to="/Child-party " className="tag child-partyPage">
+                    {""}
                     Дитяче свято
                   </Link>
                 );
               }
             }
           });
+          
           return tagHtml;
-        }
-
+          }
+       
         function complact() {
           let complact = [];
           let complBlock = ` `;

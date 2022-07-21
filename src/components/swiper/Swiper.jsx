@@ -40,7 +40,7 @@ export default (props) => {
     }
     return(video)
   }
-console.log(props.props.video);
+
   swiperPage.push(
     <Swiper
       // install Swiper modules
