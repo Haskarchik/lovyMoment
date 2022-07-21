@@ -94,7 +94,9 @@ export default function ProductPage(props) {
         function complact() {
           let complact = [];
           let complBlock = ` `;
-
+          if (complactation !== undefined) {
+            
+          
           complactation.forEach((el) => {
             if (el !== "" && el !== undefined && el !== " ") {
               complact.push(<li>{el}</li>);
@@ -108,7 +110,8 @@ export default function ProductPage(props) {
             } else if (el == "" || el == undefined || el == " ") {
             }
           });
-
+        }
+        
           return complBlock;
         }
 
@@ -125,7 +128,7 @@ export default function ProductPage(props) {
 
           return varningHtml;
         }
-        console.log(quantityvar);
+       
        
         function quantity() {
           let quantityHtnm 

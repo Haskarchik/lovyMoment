@@ -15,11 +15,15 @@
 .swiper-wrapper {
 }
 .swiper-slide {
+  position: relative;
   border-radius: 24px;
   img {
+ 
     border-radius: 24px;
     height: 100%;
     width: 100%;
+    object-fit:cover;
+    object-position:center;
   }
 }
 .swiper-pagination {
