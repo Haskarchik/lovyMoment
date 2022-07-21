@@ -192,6 +192,9 @@
     z-index: 1;
     padding-bottom: 25px;
   }
+  .header_button {
+    padding: 16px 60px;
+  }
   .buttons_img {
     display: block;
   }
