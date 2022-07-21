@@ -6,7 +6,42 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default (props) => {
-  return (
+  let swiperPage = [];
+
+  function slide() {
+    let slide = [];
+
+    for (let i = 0; i < props.props.albom.length; i++) {
+      slide.push(
+        <SwiperSlide>
+          <img src={props.props.albom[i]} alt="" />
+        </SwiperSlide>
+      );
+    }
+
+    return slide;
+  }
+  function video() {
+    let video = [];
+    if (props.props.video.length > 2) {
+      video.push(
+        <SwiperSlide>
+          <ReactPlayer
+            controls={true}
+            width="100%"
+            height="100%"
+            url={props.props.video}
+          />
+        </SwiperSlide>
+      );
+    }
+    else{
+      video = []
+    }
+    return(video)
+  }
+console.log(props.props.video);
+  swiperPage.push(
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, A11y]}
@@ -17,27 +52,10 @@ export default (props) => {
       // onSwiper={(swiper) => console.log(swiper)}
       //  onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>
-        <img src={props.props[0]} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={props.props[1]} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={props.props[2]} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={props.props[3]} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ReactPlayer
-          controls={true}
-          width="100%"
-          height="95%"
-          url="https://youtu.be/nOl1fV3GKqI"
-        />
-      </SwiperSlide>
+      {slide()}
+      {video()}
       ...
     </Swiper>
   );
+  return <div>{swiperPage}</div>;
 };

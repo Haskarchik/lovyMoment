@@ -37,6 +37,7 @@ export default function ProductPage(props) {
       price,
       tags,
       id,
+      video,
       descriptions,
       complactation,
       varning,
@@ -123,7 +124,8 @@ export default function ProductPage(props) {
         }
         page.push(
           <div>
-            <Swiper props={albom} />
+            <Swiper props={{albom: albom,
+                            video:video }} />
 
             <div className="page-text-part">
               <h1 className="label">{name}</h1>
