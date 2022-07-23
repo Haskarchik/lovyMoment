@@ -119,4 +119,7 @@
   .main_filter {
     justify-content: center;
   }
+  .filter_card {
+    margin: 15px 0px;
+  }
 }
