@@ -332,11 +332,11 @@
 /************************************/
 @media (min-width: 1200px) {
   .Swiper_Module {
-    width: 90vw;
+    width: 80vw;
     height:fit-content;
     .swiper-button-prev,
     .swiper-button-next {
-      display: none;
+      display: block;
     }
   }
 }
@@ -358,6 +358,10 @@
     .swiper-button-prev,
     .swiper-button-next {
       display: none;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 25px;
+      
     }
   }
   .swiper-slide {

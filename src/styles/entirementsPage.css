@@ -346,14 +346,14 @@
 /************************************/
 @media (min-width: 1200px) {
   .Swiper_Module {
-    width: 90vw;
+    width: 80vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .Swiper_Module .swiper-button-prev,
 .Swiper_Module .swiper-button-next {
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -375,6 +375,9 @@
   .Swiper_Module .swiper-button-prev,
 .Swiper_Module .swiper-button-next {
     display: none;
+  }
+  .Swiper_Module .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 25px;
   }
   .swiper-slide img {
     height: 100%;
