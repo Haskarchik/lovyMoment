@@ -333,7 +333,7 @@
 @media (min-width: 1200px) {
   .Swiper_Module {
     width: 80vw;
-    height:fit-content;
+    height: fit-content;
     .swiper-button-prev,
     .swiper-button-next {
       display: block;
@@ -344,6 +344,7 @@
   .swiper {
     max-width: 740px;
   }
+  
 }
 
 @media (max-width: 425px) {
@@ -352,17 +353,63 @@
     margin: auto;
     padding: 0px;
   }
+  .items {
+    color: white;
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 16px;
+    align-items: center;
+    display: flex;
+    bottom: 35px;
+    right: 30px;
+    position: absolute;
+    z-index: 12;
+  }
+  .videoCount {
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+    background: #2b4049;
+    
+    width: 60px;
+    height: 30px;
+    background-image: url(../img/icons/play.png);
+    background-repeat: no-repeat;
+    background-position: 35px ;
+
+    border-radius: 41px;
+  }
+
+  .imageCount {
+    
+    padding: 2px 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    background: #2b4049;
+
+    width: 60px;
+    height: 30px;
+    background-image: url(../img/icons/image.png);
+    background-repeat: no-repeat;
+    background-position: 30px ;
+    border-radius: 41px;
+  }
   .Swiper_Module {
-   
-    height:fit-content;
+    height: fit-content;
     .swiper-button-prev,
     .swiper-button-next {
       display: none;
     }
     .swiper-pagination-bullets.swiper-pagination-horizontal {
       bottom: 25px;
-      
     }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
   .swiper-slide {
     img {
@@ -371,7 +418,11 @@
       object-fit: cover;
     }
   }
-
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 45px;
+    left: -70px;
+    width: 100%;
+  }
   .page-text-part {
     padding: 0px 5px;
 
@@ -395,7 +446,7 @@
   .swiper {
     margin-top: 0px;
     border-radius: 0px;
-    
+
     width: 100vw;
   }
   .swiper-slide {

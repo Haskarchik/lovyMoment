@@ -161,6 +161,9 @@
     position: absolute;
     display: none;
   }
+  .header {
+    padding-bottom: 15px;
+  }
   .header_contacts {
     display: none;
   }
@@ -177,7 +180,7 @@
   .nav_line_display {
     display: flex;
   }
-  .header-title {
+  .header_title {
     margin: auto;
     line-height: 40px;
     font-size: 40px;

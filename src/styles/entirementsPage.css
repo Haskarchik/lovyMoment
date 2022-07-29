@@ -367,6 +367,45 @@
     margin: auto;
     padding: 0px;
   }
+  .items {
+    color: white;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    align-items: center;
+    display: flex;
+    bottom: 35px;
+    right: 30px;
+    position: absolute;
+    z-index: 12;
+  }
+  .videoCount {
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+    background: #2b4049;
+    width: 60px;
+    height: 30px;
+    background-image: url(../img/icons/play.png);
+    background-repeat: no-repeat;
+    background-position: 35px;
+    border-radius: 41px;
+  }
+  .imageCount {
+    padding: 2px 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    background: #2b4049;
+    width: 60px;
+    height: 30px;
+    background-image: url(../img/icons/image.png);
+    background-repeat: no-repeat;
+    background-position: 30px;
+    border-radius: 41px;
+  }
   .Swiper_Module {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -379,11 +418,20 @@
   .Swiper_Module .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 25px;
   }
+  .swiper-button-prev,
+.swiper-button-next {
+    display: none;
+  }
   .swiper-slide img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 45px;
+    left: -70px;
+    width: 100%;
   }
   .page-text-part {
     padding: 0px 5px;
