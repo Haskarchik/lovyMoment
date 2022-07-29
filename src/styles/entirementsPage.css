@@ -356,7 +356,9 @@
     padding: 0px;
   }
   .Swiper_Module {
-    height: 0%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .Swiper_Module .swiper-button-prev,
 .Swiper_Module .swiper-button-next {
