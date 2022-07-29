@@ -23,7 +23,9 @@ export default (props) => {
   }
   function video() {
     let video = [];
-    if (props.props.video.length > 2) {
+
+    if(props.props.video != undefined){
+      if (props.props.video.length > 2) {
       video.push(
         <SwiperSlide>
           <ReactPlayer
@@ -38,11 +40,12 @@ export default (props) => {
     else{
       video = []
     }
+  }
     return(video)
   }
-  console.log(props.props.SwiperClass);
+  console.log(props.props.isActive ? 'Swiper_Module': ' 3');
   swiperPage.push(
-    <Swiper className={ ' '+  props.props.SwiperClass}
+    <Swiper className={ ' '+  props.props.SwiperClass + ' ' + (props.props.isActive ? 'Swiper_Module': ' 3')} 
       // install Swiper modules
       modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}

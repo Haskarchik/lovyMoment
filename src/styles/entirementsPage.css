@@ -130,14 +130,25 @@
   color: #ffffff;
 }
 
-.city-dayPage {
+.festivalPage {
   background-color: #e3f5e4;
   color: #1a9c22;
   transition-duration: 0.3s;
 }
 
-.city-dayPage:hover {
+.festivalPage:hover {
   background-color: #5bd262;
+  color: #ffffff;
+}
+
+.foodPage {
+  background-color: #fceeee;
+  color: #fc5656;
+  transition-duration: 0.3s;
+}
+
+.foodPage:hover {
+  background-color: #fc5656;
   color: #ffffff;
 }
 
@@ -152,13 +163,13 @@
   color: #ffffff;
 }
 
-.festivalPage {
+.TrampolinePage {
   background-color: #f9e9f0;
   color: #e04685;
   transition-duration: 0.3s;
 }
 
-.festivalPage:hover {
+.TrampolinePage:hover {
   background-color: #f97caf;
   color: #ffffff;
 }
@@ -174,14 +185,25 @@
   color: black;
 }
 
-.birthdayPage {
+.CarouselPage {
   background-color: #ede7f8;
   color: #7d48db;
   transition-duration: 0.3s;
 }
 
-.birthdayPage:hover {
+.CarouselPage:hover {
   background-color: #7d48db;
+  color: #ffffff;
+}
+
+.MegaGamePage {
+  background-color: #e7f3f8;
+  color: #0c9f9d;
+  transition-duration: 0.3s;
+}
+
+.MegaGamePage:hover {
+  background-color: #0c9f9d;
   color: #ffffff;
 }
 
@@ -329,9 +351,16 @@
 }
 @media (max-width: 425px) {
   .container {
-    max-width: 415px;
+    max-width: 425px;
     margin: auto;
     padding: 0px;
+  }
+  .Swiper_Module {
+    height: 0%;
+  }
+  .Swiper_Module .swiper-button-prev,
+.Swiper_Module .swiper-button-next {
+    display: none;
   }
   .swiper-slide img {
     height: 100%;
@@ -360,7 +389,6 @@
   .swiper {
     margin-top: 0px;
     border-radius: 0px;
-    left: -5px;
     width: 100vw;
   }
   .swiper-slide img {

@@ -61,12 +61,18 @@
 }
 .header_back {
   cursor: pointer;
-  background-color: #3f52a6;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  text-align: center;
+
+  
   padding-top: 10px;
+  a {
+    
+    text-align:start;
+    background-color: #3f52a6;
+    border-radius: 50%;
+    padding: 20px 14px 5px 14px;
+    height: 40px;
+    width: 40px;
+  }
 }
 .header_link {
   background-color: #3f52a6;
@@ -135,16 +141,16 @@
 }
 
 /************************************/
-@media (max-width:768px) {
-  .tel_number{
-    a{
+@media (max-width: 768px) {
+  .tel_number {
+    a {
       font-size: 23px;
       line-height: 30px;
     }
-  }  
+  }
 }
 @media (max-width: 425px) {
-  .container{
+  .container {
     padding: 0px 5px;
   }
   .tel-number {
@@ -177,14 +183,12 @@
     max-width: 225px;
   }
   .header_button {
-    
     a {
       font-size: 24px;
       line-height: 32px;
     }
   }
   .header_buttons {
-    
     min-width: 300px;
 
     display: flex;
@@ -193,22 +197,19 @@
     z-index: 1;
     padding-bottom: 25px;
   }
-  .header_button{
+  .header_button {
     padding: 16px 20px;
     font-size: 20px;
   }
   .buttons_img {
     display: block;
   }
-
-
 }
 @media (max-width: 375px) {
-  
-  .header_button{
-    a{
-    padding: 16px 20px;
-    font-size: 20px;
+  .header_button {
+    a {
+      padding: 16px 20px;
+      font-size: 20px;
+    }
   }
-}
 }

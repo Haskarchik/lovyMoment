@@ -4,6 +4,7 @@ import Swiper from "../swiper/Swiper";
 import { useState, useEffect } from "react";
 import { db } from "../../constants/firebase";
 import { onValue, ref } from "firebase/database";
+import '../../styles/entirementsPage.css'
 
 export default function Modal({ active, setActive, params }) {
   const [todos, setTodos] = useState([]);
@@ -40,13 +41,14 @@ export default function Modal({ active, setActive, params }) {
       if (id == params.id) {
         
         
-        swiperHtml =( <Swiper props={{ albom: albom, video: video, SwiperClass:modal.Modal }} />)
+        swiperHtml =( <Swiper props={{ albom: albom, SwiperClass:modal.Modal,isActive: active }} />)
       
       
       }
     }
     
   );
+ 
   return (
     <div
       className={active ? modal.modal_active : modal.modal}

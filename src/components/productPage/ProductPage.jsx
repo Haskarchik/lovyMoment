@@ -71,11 +71,11 @@ export default function ProductPage(props) {
                     Промоакція
                   </Link>
                 );
-              } else if (el.includes("City-day")) {
+              } else if (el.includes("Trampoline")) {
                 tagHtml.push(
-                  <Link to="/City-day" className="tag city-dayPage">
+                  <Link to="/Trampoline" className="tag TrampolinePage">
                     {" "}
-                    День міста
+                    Надувні гірки та батути
                   </Link>
                 );
               } else if (el.includes("Child-party")) {
@@ -85,10 +85,34 @@ export default function ProductPage(props) {
                     Дитяче свято
                   </Link>
                 );
+              } else if (el.includes("Food")) {
+                tagHtml.push(
+                  <Link to="/Food " className="tag foodPage">
+                    {""}
+                    Кейтеринг
+                  </Link>
+                );
+              }else if (el.includes("Carousel")) {
+                tagHtml.push(
+                  <Link to="/Carousel " className="tag CarouselPage">
+                    {""}
+                    Карусель та електро...
+                  </Link>
+                );
+              
+              }else if (el.includes("MegaGame")) {
+                tagHtml.push(
+                  <Link to="/MegaGame " className="tag MegaGamePage">
+                    {""}
+                    Мега ігри
+                  </Link>
+                );
+              
               }
-            }
-          });
-          
+              
+            
+          }});
+         
           return tagHtml;
           }
        

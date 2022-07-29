@@ -100,11 +100,18 @@
   content: " ";
 }
 
-@media (max-width: 480px) {
-  .modal {
-    display: none;
+@media (max-width: 425px) {
+  .Modal {
+    height: 100%;
+    width: 100vh;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
-  .modal_active {
+  .swiper {
+    height: 100%;
+  }
+  .swiper-button-prev,
+.swiper-button-next {
     display: none;
   }
 }
