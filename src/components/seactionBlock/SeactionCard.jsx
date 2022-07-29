@@ -9,8 +9,8 @@ const SeactionCard = (props) => {
       <div className={props.card.tag + props.card.FilterCard}>
         <ImgSelectors id={props.card.img} />
         <div className={seactionBlockStyles.card_label}>
-          <div className={seactionBlockStyles.text}>Розваги для</div>
-          <div className={seactionBlockStyles.card_title}>
+          <div className={seactionBlockStyles.text}>{props.card.sename}</div>
+          <div className={seactionBlockStyles.card_title + props.card.titleClass}>
             {props.card.name}
           </div>
         </div>

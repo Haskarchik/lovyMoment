@@ -7,13 +7,16 @@ import Footer from "./components/footer/Footer";
 import Festival from "./pages/Festival";
 import Corporate from "./pages/Corporate";
 import Promotion from "./pages/Promotion";
-import Birthday from "./pages/Birthday";
+import Carousel from "./pages/Carousel";
 import ChildParty from "./pages/ChildParty";
-import CityDay from "./pages/CityDay";
+import Trampoline from "./pages/Trampoline";
 import AllEntertiments from "./components/allEntertimes/AllEntertiments";
 import Caller from "./components/UI/Caller";
 import Notification from "./components/UI/Notification";
 import Page from "./pages/productPages/Page";
+import MegaGame from "./pages/MegaGame";
+import Food from "./pages/Food";
+import PageNotFound from "./pages/PageNotFound";
 
 const mainpage = [
   <Header></Header>,
@@ -34,7 +37,6 @@ function App() {
         <Route path="/" element={mainpage} />
 
         <Route path="/Page/:id" element={<Page />} />
-        
 
         <Route
           path="Corporate"
@@ -45,18 +47,30 @@ function App() {
           element={<Promotion updateDatas={updateData} />}
         />
         <Route
-          path="Birthday"
-          element={<Birthday updateDatas={updateData} />}
+          path="Carousel"
+          element={<Carousel updateDatas={updateData} />}
         />
         <Route
           path="Child-party"
           element={<ChildParty updateDatas={updateData} />}
         />
-        <Route path="City-day" element={<CityDay updateDatas={updateData} />} />
+        <Route
+          path="Trampoline"
+          element={<Trampoline updateDatas={updateData} />}
+        />
         <Route
           path="Festival"
           element={<Festival updateDatas={updateData} />}
         />
+          <Route
+          path="MegaGame"
+          element={<MegaGame updateDatas={updateData} />}
+        />
+          <Route
+          path="Food"
+          element={<Food updateDatas={updateData} />}
+        />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Caller />
       <Notification />

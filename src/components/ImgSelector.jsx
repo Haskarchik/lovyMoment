@@ -4,7 +4,10 @@ import birthday from "../img/Birthday-card.png";
 import promotion from "../img/Promotion-card.png";
 import festival from "../img/Festival-card.png";
 import corporate from "../img/Corporate-card.png";
-import city from "../img/City-day-card.png";
+import trampoline from "../img/trampline-card.png";
+import game from "../img/game-card.svg";
+import food from "../img/popcorn-card.svg";
+import carousel from "../img/carousel-card.svg";
 
 export const ImgSelectors = ({ id }) => {
   switch (id) {
@@ -18,8 +21,14 @@ export const ImgSelectors = ({ id }) => {
       return <img src={festival} />;
     case "corporate":
       return <img src={corporate} />;
-    case "city":
-      return <img src={city} />;
+    case "trampoline":
+      return <img src={trampoline} />;
+    case "game":
+      return <img src={game} />;
+    case "food":
+      return <img src={food} />;
+    case "carousel":
+      return <img src={carousel} />;
 
     default:
       return <svg></svg>;

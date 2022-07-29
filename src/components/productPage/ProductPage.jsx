@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { db } from "../../constants/firebase";
 import { onValue, ref } from "firebase/database";
 
+
 export default function ProductPage(props) {
   const [todos, setTodos] = useState([]);
   const [isInitialRender, setIsInitialRender] = useState(true);
@@ -43,7 +44,7 @@ export default function ProductPage(props) {
       complactation,
       varning,
     }) => {
-      if (id === props.id.id) {
+      if (id === props.id.params.id) {
         function tagsTranslate() {
           
           let tagHtml = [];
@@ -158,7 +159,8 @@ export default function ProductPage(props) {
         page.push(
           <div>
             <Swiper props={{albom: albom,
-                            video:video }} />
+                            video:video,
+                            modal:props.id.modal }} />
 
             <div className="page-text-part">
               <h1 className="label">{name}</h1>

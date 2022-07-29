@@ -4,7 +4,7 @@ import HeaderButtons from "../components/header/HeaderButtons";
 import ProductCard from "../components/allEntertimes/ProductCard";
 import header from '../styles/header.module.css'
 import allEntertimentsStyle from '../styles/allEntertiments.module.css'
-const CityDay = () => {
+const Carousel  = () => {
   return (
     <div>
       <div className={header.header}>
@@ -13,15 +13,14 @@ const CityDay = () => {
           <HeaderButtons></HeaderButtons>
         </div>
       </div>
-
-      <div className={allEntertimentsStyle.container}>
+    <div className={allEntertimentsStyle.container}>
       <div className={allEntertimentsStyle.entertiment_label}>
-        <h2>Розваги для Дня Міста</h2>
+        <h2>Карусель та електротранспорт</h2>
       </div>
-      <ProductCard props={{tag:"City-day"}} />
-    </div>
+      <ProductCard props={{tag:"Carousel"}} />
+      </div>
     </div>
   );
 };
 
-export default CityDay;
+export default Carousel;

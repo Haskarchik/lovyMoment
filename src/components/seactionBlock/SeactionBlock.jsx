@@ -10,6 +10,9 @@ export default function SeactionBlock() {
           card={{
             name: "Дитяче свято",
             img: "child",
+            sename:'Розваги для',
+            titleClass:' '+ seactionBlockStyles.child_party,
+
             tag:
               seactionBlockStyles.filter_card +
               " " +
@@ -20,7 +23,10 @@ export default function SeactionBlock() {
         <SeactionCard
           card={{
             name: "Корпоратив",
+            sename:'Розваги для',
             img: "corporate",
+            titleClass:' '+ seactionBlockStyles.corporate,
+
             tag:
               seactionBlockStyles.filter_card +
               " " +
@@ -32,7 +38,10 @@ export default function SeactionBlock() {
         <SeactionCard
           card={{
             name: "Фестиваль",
+            sename:'Розваги для',
             img: "festival",
+            titleClass:' '+ seactionBlockStyles.festival,
+
             tag:
               seactionBlockStyles.filter_card +
               " " +
@@ -43,20 +52,26 @@ export default function SeactionBlock() {
         />
         <SeactionCard
           card={{
-            name: "День міста",
-            img: "city",
+            name: "Гірки та батути",
+            sename:'Надувні',
+            img: "trampoline",
+            titleClass:' '+ seactionBlockStyles.trampoline,
+
             tag:
               seactionBlockStyles.filter_card +
               " " +
-              seactionBlockStyles.city_day +
+              seactionBlockStyles.trampoline +
               " ",
-            link: "City-day",
+            link: "Trampoline",
           }}
         />
         <SeactionCard
           card={{
             name: "Промоакція",
+            sename:'Розваги для',
             img: "promotion",
+            titleClass:' '+ seactionBlockStyles.promotion,
+            
             tag:
               seactionBlockStyles.filter_card +
               " " +
@@ -67,16 +82,45 @@ export default function SeactionBlock() {
         />
         <SeactionCard
           card={{
-            name: "День народження",
-            img: "birthday",
+            name: "Карусель та електро-транспорт",
+            img: "carousel",
             tag:
               seactionBlockStyles.filter_card +
               " " +
-              seactionBlockStyles.birthday +
+              seactionBlockStyles.carousel +
               " ",
-            link: "Birthday",
+              titleClass:' '+ seactionBlockStyles.carousel,
+            link: "Carousel",
           }}
         />
+        <SeactionCard
+        card={{
+          name: "Мега ігри",
+          sename:'Розваги',
+          img: "game",
+          titleClass:' '+ seactionBlockStyles.game,
+          tag:
+            seactionBlockStyles.filter_card +
+            " " +
+            seactionBlockStyles.game +
+            " ",
+          link: "MegaGame",
+        }}
+      />
+      <SeactionCard
+          card={{
+            name: "Кейтеринг",
+            img: "food",
+            sename:'Смачненьке',
+            titleClass:' '+ seactionBlockStyles.food,
+            tag:
+              seactionBlockStyles.filter_card +
+              " " +
+              seactionBlockStyles.food +
+              " ",
+            link: "Food",
+          }}
+        />    
       </div>
     </div>
   );
