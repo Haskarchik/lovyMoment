@@ -344,6 +344,18 @@
 }
 
 /************************************/
+@media (min-width: 1200px) {
+  .Swiper_Module {
+    width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .Swiper_Module .swiper-button-prev,
+.Swiper_Module .swiper-button-next {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .swiper {
     max-width: 740px;

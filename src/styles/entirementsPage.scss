@@ -330,6 +330,16 @@
 }
 
 /************************************/
+@media (min-width: 1200px) {
+  .Swiper_Module {
+    width: 90vw;
+    height:fit-content;
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
 @media (max-width: 768px) {
   .swiper {
     max-width: 740px;
