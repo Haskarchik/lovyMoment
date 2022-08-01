@@ -43,18 +43,25 @@ export default (props) => {
   
     return(video)
   }}
+  
   function items() {
     let items = [];
 
       if ( props.props.albom.length > 0 ) {
         if(props.props.video != undefined){
+          let videoCount
+          if(props.props.video.length > 5)
+          videoCount =1
+          else{
+            videoCount = 0
+          }
         items.push(
           <div className="items">
         <div className="imageCount">
           {props.props.albom.length}
         </div>
         <div className="videoCount">
-          {props.props.video.length}
+          {videoCount }
         </div>
         </div>
       );
@@ -65,7 +72,7 @@ export default (props) => {
       }
     return(items)
   }
-  console.log(props.props.isActive ? 'Swiper_Module': ' 3');
+
   swiperPage.push(
     <Swiper className={ ' '+  props.props.SwiperClass + ' ' + (props.props.isActive ? 'Swiper_Module': ' 3')} 
       // install Swiper modules

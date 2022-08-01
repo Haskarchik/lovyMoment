@@ -91,56 +91,48 @@
 }
 
 .trampoline {
-  background-color: #f3669e;
+  background-color: #ACC220;
 }
-.trampoline img {
-  position: absolute;
-  top: 1px;
-  left: 3px;
-  height: 100px;
+.trampoline .card_title {
+  width: 200px;
+  margin-top: -10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .promotion {
   background-color: #f8d37c;
   color: white;
 }
-.promotion .card-title::before,
-.promotion .card-title::after {
-  background-color: black;
-}
 
 .game {
-  background-color: #0C9F9D;
+  background-color: #E55BA0;
 }
-.game img {
-  position: absolute;
-  top: -2px;
-  left: -4px;
-  height: 100px;
+.game .card_title {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .carousel {
   font-size: 20px;
   line-height: 24px;
-  background-color: #9002e2;
+  background-color: #F65D5C;
 }
-.carousel img {
-  position: absolute;
-  transform: rotate(45deg);
-  top: -11px;
-  left: -11px;
-  height: 100px;
+.carousel .card_title {
+  margin-top: -5px;
 }
 
 .food {
-  background-color: #fc5656;
+  background-color: #8B5E4D;
 }
-.food img {
-  position: absolute;
-  transform: rotate(135deg);
-  top: -20px;
-  left: -20px;
-  height: 100px;
+.food .card_title {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media (max-width: 768px) {

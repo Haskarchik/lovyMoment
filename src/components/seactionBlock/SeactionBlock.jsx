@@ -52,8 +52,8 @@ export default function SeactionBlock() {
         />
         <SeactionCard
           card={{
-            name: "Гірки та батути",
-            sename:'Надувні',
+            name: "Надувні Гірки та батути",
+            sename:'',
             img: "trampoline",
             titleClass:' '+ seactionBlockStyles.trampoline,
 
@@ -82,7 +82,7 @@ export default function SeactionBlock() {
         />
         <SeactionCard
           card={{
-            name: "Карусель та електро-транспорт",
+            name: "Карусель та електротранспорт",
             img: "carousel",
             tag:
               seactionBlockStyles.filter_card +
@@ -96,7 +96,7 @@ export default function SeactionBlock() {
         <SeactionCard
         card={{
           name: "Мега ігри",
-          sename:'Розваги',
+          sename:'',
           img: "game",
           titleClass:' '+ seactionBlockStyles.game,
           tag:
@@ -111,7 +111,7 @@ export default function SeactionBlock() {
           card={{
             name: "Кейтеринг",
             img: "food",
-            sename:'Смачненьке',
+            sename:'',
             titleClass:' '+ seactionBlockStyles.food,
             tag:
               seactionBlockStyles.filter_card +
