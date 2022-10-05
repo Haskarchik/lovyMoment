@@ -154,8 +154,7 @@ export default function ProductPage(props) {
           return varningHtml;
         }
        
-       console.log(Object.keys(quantityvar));
-       console.log(Object.values(quantityvar));
+    
 
 
         function quantity () {
