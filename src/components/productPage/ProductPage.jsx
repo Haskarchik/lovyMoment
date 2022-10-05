@@ -154,32 +154,31 @@ export default function ProductPage(props) {
           return varningHtml;
         }
        
-       
-        function quantity() {
-          let quantityHtnm 
+       console.log(Object.keys(quantityvar));
+       console.log(Object.values(quantityvar));
+
+
+        function quantity () {
+          let quantityHtnm = [];
           if (quantityvar == { } || quantityvar == " " || quantityvar == undefined) {
-            quantityHtnm = ` `;
+            quantityHtnm =[];
           }
           else{
-            quantityHtnm=(
-            <div className="quantity">
+            for (let i = 0; i < Object.keys(quantityvar).length; i++) {
+              quantityHtnm.push( 
                 <div className="quantity-card  ">
-                  <div className="number orange">{quantityvar.One.for}</div>
-                  <p>{'Кількість ' + quantityvar.One.name}</p>
-                </div>
-                <div className="quantity-card  ">
-                  <div className="number purple">{quantityvar.Two.for}</div>
-                  <p>{'Кількість ' + quantityvar.Two.name}</p>
-                </div>
-                <div className="quantity-card  ">
-                  <div className="number green">{quantityvar.Three.for}</div>
-                  <p>{'Кількість ' + quantityvar.Three.name}</p>
-                </div>
-            </div>
-            );
+                <div className="number orange">{Object.values(quantityvar)[i].count}</div>
+                <p>{'Кількість ' + Object.values(quantityvar)[i].name}</p>
+              </div>        
+              )
+              
+            }
+            
           }
           return quantityHtnm;
+
         }
+        
         page.push(
           <div>
             <Swiper props={{albom: albom,
@@ -201,9 +200,11 @@ export default function ProductPage(props) {
               </div>
               {complact()}
               {varningBlock()}
+
+            <div className="quantity">
               
                 {quantity()}
-              
+              </div>
               
             </div>
           </div>

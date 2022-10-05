@@ -38,7 +38,7 @@ export default function Modal({ active, setActive, params }) {
   
       
    
-      if (id == params.id) {
+      if (id === params.id) {
         
         
         swiperHtml =( <Swiper props={{ albom: albom, SwiperClass:modal.Modal,isActive: active }} />)

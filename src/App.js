@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="app">
       <Routes>
+        
         <Route path="/" element={mainpage} />
 
         <Route path="/Page/:id" element={<Page />} />
