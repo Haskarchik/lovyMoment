@@ -1,0 +1,114 @@
+{
+  "Batyt": {
+    "albom": [
+      "https://lh3.googleusercontent.com/pw/AM-JKLWGXP99cNR1fcTkhOAeAWk4yMT_LGa7Y8pIzyQ7m0Z177Jc0F9RoAnjK5f9IF7kP218Bx5pOMUP4Yd2Mufu-0DHCg-OhQd00TAqKGlAB_deYH6m_v7ty8-XfhqMCFdw4eo5OU2PozrqlZrNyGvC_t3hgA=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUy8gLBDMn-ZfKP3veDcbnrJ071DKxA-ZxoEKw2naRZk427Y-aOaMdawqwJCRPHCApUHdjX7nq_juXCai19MMzvHNeTIzIttqPzRp__lCAs3SiJ19CGXuAY8hVTwxu49knM_19c_F4G5T8tO9IHhUja9w=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUMKglAzvWIkiDiHlJeIlC8S-Dk7qg0-OPNvKCoJGUaKIhYBl0h_xP65FneLZ1JPdKYlAwrpFhSlRJLm30wRrQxqiHsGQbzFf5dOgJMycwXrqyFBIdJWaevrVI7da-H4Ng52m8srKZ9NXI8VbstVe6sQg=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLXIP4_3zWmYcDM3MHDl0iCoPrdkKuGEGpvFZ_6LnHTHC7MqPLzzkEXZDIoSFnO75AC1bEYnHdU5tpJAEQPXneeC7ImqBHvNaHQw1DzhokY1tUJyLn1Z7pXcaOvanCnYEGNc1CeIrX2P19mXs5zK47uJWA=w1920-h864-no?authuser=0"
+    ],
+    "complactation": ["Турбінка ", "інструктор", ""],
+    "descriptions": "",
+    "id": "Batyt",
+    "img": "https://lh3.googleusercontent.com/pw/AM-JKLU59NUS3utRTvCtVAyL3sgvZUyQ6vxjHtWOouUzly23f3Bywv-bqf5AfggxouEvHNXi1PU7XW9ku1cxPsOhBVNOcIJ2u3Je-0FeB4GMZmooCk06JH0Cva4zPXgBYiB7SSg5j1UHKkz21NBDhmkF68qDqQ=w1250-h937-no?authuser=0",
+    "name": "Батут",
+    "price": "9000 грн/добу",
+    "quantityvar": {
+      "One": {
+        "for": 1,
+        "name": "Батутів"
+      },
+      "Three": {
+        "for": 2,
+        "name": "Команд"
+      },
+      "Two": {
+        "for": 5,
+        "name": "Гравців"
+      }
+    },
+    "tags": ["Corporate", "Festival", "Child-party"],
+    "varning": " ",
+    "video": ""
+  },
+  "Briz": {
+    "albom": [
+      "https://lh3.googleusercontent.com/pw/AM-JKLWGXP99cNR1fcTkhOAeAWk4yMT_LGa7Y8pIzyQ7m0Z177Jc0F9RoAnjK5f9IF7kP218Bx5pOMUP4Yd2Mufu-0DHCg-OhQd00TAqKGlAB_deYH6m_v7ty8-XfhqMCFdw4eo5OU2PozrqlZrNyGvC_t3hgA=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUy8gLBDMn-ZfKP3veDcbnrJ071DKxA-ZxoEKw2naRZk427Y-aOaMdawqwJCRPHCApUHdjX7nq_juXCai19MMzvHNeTIzIttqPzRp__lCAs3SiJ19CGXuAY8hVTwxu49knM_19c_F4G5T8tO9IHhUja9w=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUMKglAzvWIkiDiHlJeIlC8S-Dk7qg0-OPNvKCoJGUaKIhYBl0h_xP65FneLZ1JPdKYlAwrpFhSlRJLm30wRrQxqiHsGQbzFf5dOgJMycwXrqyFBIdJWaevrVI7da-H4Ng52m8srKZ9NXI8VbstVe6sQg=w1920-h864-no?authuser=0"
+    ],
+    "complactation": ["Турбінка ", "інструктор", ""],
+    "descriptions": "",
+    "id": "Briz",
+    "img": "https://lh3.googleusercontent.com/pw/AM-JKLV6M5pZx61t3PpA83yOZ6EZ6LtUleNCIqCXCCmbHjf_cGGK0sN8c1wHVyOo7xuWwEStgLngDtPgYtMsUximl4CNzwVGEwW8jXESjhEHxqMjTEA8cQYR0lRDkvgs5WdfmfqnUHLoa-YFUZmhPlqf4vL6jg=w703-h937-no?authuser=0",
+    "name": "Морський Бриз",
+    "price": "9000 грн/добу",
+    "quantityvar": {
+      "One": {
+        "for": 1,
+        "name": "Батутів"
+      },
+      "Three": {
+        "for": 2,
+        "name": "Команд"
+      },
+      "Two": {
+        "for": 5,
+        "name": "Гравців"
+      }
+    },
+    "tags": ["Corporate", "Festival", "Promotion"],
+    "varning": " ",
+    "video": " https://youtu.be/nOl1fV3GKqI"
+  },
+  "Minion": {
+    "albom": [
+      "https://lh3.googleusercontent.com/pw/AM-JKLWGXP99cNR1fcTkhOAeAWk4yMT_LGa7Y8pIzyQ7m0Z177Jc0F9RoAnjK5f9IF7kP218Bx5pOMUP4Yd2Mufu-0DHCg-OhQd00TAqKGlAB_deYH6m_v7ty8-XfhqMCFdw4eo5OU2PozrqlZrNyGvC_t3hgA=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUy8gLBDMn-ZfKP3veDcbnrJ071DKxA-ZxoEKw2naRZk427Y-aOaMdawqwJCRPHCApUHdjX7nq_juXCai19MMzvHNeTIzIttqPzRp__lCAs3SiJ19CGXuAY8hVTwxu49knM_19c_F4G5T8tO9IHhUja9w=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUMKglAzvWIkiDiHlJeIlC8S-Dk7qg0-OPNvKCoJGUaKIhYBl0h_xP65FneLZ1JPdKYlAwrpFhSlRJLm30wRrQxqiHsGQbzFf5dOgJMycwXrqyFBIdJWaevrVI7da-H4Ng52m8srKZ9NXI8VbstVe6sQg=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLXIP4_3zWmYcDM3MHDl0iCoPrdkKuGEGpvFZ_6LnHTHC7MqPLzzkEXZDIoSFnO75AC1bEYnHdU5tpJAEQPXneeC7ImqBHvNaHQw1DzhokY1tUJyLn1Z7pXcaOvanCnYEGNc1CeIrX2P19mXs5zK47uJWA=w1920-h864-no?authuser=0"
+    ],
+    "complactation": ["Турбінка ", "інструктор", ""],
+
+    "descriptions": "",
+    "id": "Minion",
+    "img": "https://lh3.googleusercontent.com/pw/AM-JKLXrcFpWo4d3swsweFhVyoO7Jc_q03sRPRhQoh9wiT0JUsz20TRsmDhv1TEZ32HTXkBFNQWlM1TKJRFj2vwFtdLWwOZfRveiZZggzoihummZZX9K-ibyneUiV0ELPqMYM5gCWnaelAMJz7vRNKr_T0CINw=w1920-h864-no?authuser=0",
+    "name": "Міньйон",
+    "price": "9000 грн/добу",
+    "quantityvar": {},
+    "tags": ["Corporate", "Festival", "City-day", "Promotion"],
+    "varning": " ",
+    "video": "https://youtu.be/PzcWgvgZWbM"
+  },
+  "Vata": {
+    "albom": [
+      "https://lh3.googleusercontent.com/pw/AM-JKLWGXP99cNR1fcTkhOAeAWk4yMT_LGa7Y8pIzyQ7m0Z177Jc0F9RoAnjK5f9IF7kP218Bx5pOMUP4Yd2Mufu-0DHCg-OhQd00TAqKGlAB_deYH6m_v7ty8-XfhqMCFdw4eo5OU2PozrqlZrNyGvC_t3hgA=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUy8gLBDMn-ZfKP3veDcbnrJ071DKxA-ZxoEKw2naRZk427Y-aOaMdawqwJCRPHCApUHdjX7nq_juXCai19MMzvHNeTIzIttqPzRp__lCAs3SiJ19CGXuAY8hVTwxu49knM_19c_F4G5T8tO9IHhUja9w=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLUMKglAzvWIkiDiHlJeIlC8S-Dk7qg0-OPNvKCoJGUaKIhYBl0h_xP65FneLZ1JPdKYlAwrpFhSlRJLm30wRrQxqiHsGQbzFf5dOgJMycwXrqyFBIdJWaevrVI7da-H4Ng52m8srKZ9NXI8VbstVe6sQg=w1920-h864-no?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AM-JKLXIP4_3zWmYcDM3MHDl0iCoPrdkKuGEGpvFZ_6LnHTHC7MqPLzzkEXZDIoSFnO75AC1bEYnHdU5tpJAEQPXneeC7ImqBHvNaHQw1DzhokY1tUJyLn1Z7pXcaOvanCnYEGNc1CeIrX2P19mXs5zK47uJWA=w1920-h864-no?authuser=0"
+    ],
+    "complactation": ["Турбінка ", "інструктор", ""],
+    "descriptions": "",
+    "id": "Vata",
+    "img": "https://lh3.googleusercontent.com/pw/AM-JKLVwkpAFSamvg6UX7BSmCGttYKrvWH-KU58PVBYTDoxRXs3BxFKpwIqAvbZBMalRDQqNBFj5FoSU1T95lKvWH4cmn8Jxcthp4lQQyvt5ByzXXrVlwbeknhBFWeYhZgzdgEhmR3YBZTSmRiXx7wqmLRJwYw=w1174-h880-no?authuser=0",
+    "name": "Солодка Вата",
+    "price": "1000 грн/добу",
+    "tags": ["Corporate", "Festival"],
+    "varning": " ",
+    "video": ""
+  },
+  " ": {
+    "albom": [
+      "",
+      ""
+    ],
+    "complactation": [" ", "", ""],
+    "descriptions": "",
+    "id": "",
+    "img": "",
+    "name": "",
+    "price": "",
+    "tags": ["", ""],
+    "varning": " ",
+    "video": ""
+  }
+}
