@@ -17,6 +17,7 @@ import Page from "./pages/productPages/Page";
 import MegaGame from "./pages/MegaGame";
 import Food from "./pages/Food";
 import PageNotFound from "./pages/PageNotFound";
+import Admin from "./components/UI/Admin";
 
 const mainpage = [
   <Header></Header>,
@@ -36,7 +37,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={mainpage} />
-
+        <Route path="/Admin" element={<Admin/>} />
         <Route path="/Page/:id" element={<Page />} />
 
         <Route
