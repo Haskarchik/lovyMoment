@@ -163,11 +163,11 @@ export default function ProductPage(props) {
             quantityHtnm =[];
           }
           else{
-            for (let i = 0; i < Object.keys(quantityvar).length; i++) {
+            for (let i = 0; i < quantityvar.length; i++) {
               quantityHtnm.push( 
                 <div className="quantity-card  ">
-                <div className="number orange">{Object.values(quantityvar)[i].count}</div>
-                <p>{'Кількість ' + Object.values(quantityvar)[i].name}</p>
+                <div className="number orange">{quantityvar[i].count}</div>
+                <p>{'Кількість ' + quantityvar[i].name}</p>
               </div>        
               )
               
