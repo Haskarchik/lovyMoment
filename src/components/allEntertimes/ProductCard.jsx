@@ -30,10 +30,30 @@ export default function ProductCard(props) {
 
   let card = [];
   let tagName = props.props.tag;
-  
+
+  for (let i = 0; i < todos.length; i++) {
+  if ( todos[i].tags.includes(tagName)) {
+      card.push(
+        <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
+          <div className={allEntirementsStyle.entertiment_card}>
+            <Image link={todos[i].img}></Image>
+            <div className={allEntirementsStyle.gradiant}>
+              <div className={allEntirementsStyle.more_btn}>Деталі</div>
+              <div className={allEntirementsStyle.entertiment_card_label}>
+                <p> {todos[i].name} </p>
+                <div className={allEntirementsStyle.price}>
+                  {todos[i].price}
+                </div>
+              </div>
+            </div>
+          </div>
+        </NavLink>
+      );
+    }
+  }
   for (let i = 0; i < 12; i++) {
     if (todos.length > 0) {
-      if (todos[i].tags.includes(tagName) || tagName === "all") {
+      if (tagName === "all") {
         card.push(
           <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
             <div className={allEntirementsStyle.entertiment_card}>
@@ -56,7 +76,6 @@ export default function ProductCard(props) {
 
   return (
     <div id="entertiment-row" className={allEntirementsStyle.entertiment_row}>
-      
       {card}
       {props.props.more}
     </div>
