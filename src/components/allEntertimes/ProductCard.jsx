@@ -31,7 +31,7 @@ export default function ProductCard(props) {
   let card = [];
   let tagName = props.props.tag;
   
-  for (let i = 0; i < todos.length; i++) {
+  for (let i = 0; i < 12; i++) {
     if (todos.length > 0) {
       if (todos[i].tags.includes(tagName) || tagName === "all") {
         card.push(

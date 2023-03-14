@@ -36,7 +36,7 @@ export default function AllEntertiments() {
   function moreCard() {
        let card = [];
     
-       for (let i = 16; i < todos.length; i++) {
+       for (let i = 12; i < todos.length; i++) {
         if (todos.length > 0) {
           
             card.push(
