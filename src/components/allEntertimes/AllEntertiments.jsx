@@ -31,42 +31,65 @@ export default function AllEntertiments() {
     });
   });
 
-  const [moreCards, setMoreCard] = useState(" ");
+  const [moreCards, setMoreCard] = useState([]);
 
   function moreCard() {
        let card = [];
-    
-       for (let i = 12; i < todos.length; i++) {
-        if (todos.length > 0) {
-          
-            card.push(
-              <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
-                <div className={allEntirementsStyle.entertiment_card}>
-                  <Image link={todos[i].img}></Image>
-                  <div className={allEntirementsStyle.gradiant}>
-                    <div className={allEntirementsStyle.more_btn}>Деталі</div>
-                    <div className={allEntirementsStyle.entertiment_card_label}>
-                      <p> {todos[i].name} </p>
-                      <div className={allEntirementsStyle.price}>
-                        {todos[i].price}
+       if (moreCards.length != 10) {
+        for (let i = 10; i < 20; i++) {
+          if (todos.length > 0) {
+              card.push(
+                <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
+                  <div className={allEntirementsStyle.entertiment_card}>
+                    <Image link={todos[i].img}></Image>
+                    <div className={allEntirementsStyle.gradiant}>
+                      <div className={allEntirementsStyle.more_btn}>Деталі</div>
+                      <div className={allEntirementsStyle.entertiment_card_label}>
+                        <p> {todos[i].name} </p>
+                        <div className={allEntirementsStyle.price}>
+                          {todos[i].price}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </NavLink>
-            );
-          
+                </NavLink>
+              );
+            
+          }
         }
+       }else{
+
+       
+      for (let i = 20; i < todos.length; i++) {
+        card.push(
+          <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
+            <div className={allEntirementsStyle.entertiment_card}>
+              <Image link={todos[i].img}></Image>
+              <div className={allEntirementsStyle.gradiant}>
+                <div className={allEntirementsStyle.more_btn}>Деталі</div>
+                <div className={allEntirementsStyle.entertiment_card_label}>
+                  <p> {todos[i].name} </p>
+                  <div className={allEntirementsStyle.price}>
+                    {todos[i].price}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </NavLink>
+        );
+        
       }
-    
-       setMoreCard(card);
-    
        const button = document.getElementById("entertiment_button");
     
        button.className =
          allEntirementsStyle.entertiment_button +
          " " +
          allEntirementsStyle._disabled;
+    }
+      
+       setMoreCard(card);
+    
+      
   }
 
   return (

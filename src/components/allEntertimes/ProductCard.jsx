@@ -51,7 +51,7 @@ export default function ProductCard(props) {
       );
     }
   }
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 10; i++) {
     if (todos.length > 0) {
       if (tagName === "all") {
         card.push(
