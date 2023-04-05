@@ -11,21 +11,21 @@ import carousel from "../img/carousel-card.png";
 export const ImgSelectors = ({ id }) => {
   switch (id) {
     case "child":
-      return <img src={Child} />;
+      return <img src={Child} alt="Картинка" />;
     case "promotion":
-      return <img src={promotion} />;
+      return <img src={promotion} alt="Картинка" />;
     case "festival":
-      return <img src={festival} />;
+      return <img src={festival} alt="Картинка"/>;
     case "corporate":
-      return <img src={corporate} />;
+      return <img src={corporate} alt="Картинка"/>;
     case "trampoline":
-      return <img src={trampoline} />;
+      return <img src={trampoline} alt="Картинка"/>;
     case "game":
-      return <img src={game} />;
+      return <img src={game} alt="Картинка"/>;
     case "food":
-      return <img src={food} />;
+      return <img src={food} alt="Картинка"/>;
     case "carousel":
-      return <img src={carousel} />;
+      return <img src={carousel} alt="Картинка"/>;
 
     default:
       return <svg></svg>;
