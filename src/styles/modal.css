@@ -1,0 +1,4 @@
+.modal_swiper_slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}

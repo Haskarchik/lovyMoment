@@ -411,10 +411,13 @@ line-height: 16px;
   .swiper-button-next {
     display: none;
   }
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
+  .swiper-wrapper{
+   
     align-items: center;
+
+  }
+  .swiper-slide {
+    
     img {
       height: 100%;
       width: 100%;

@@ -4,7 +4,8 @@ import ReactPlayer from "react-player";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import '../../styles/modal.module.css'
+import '../../styles/modal.css'
+
 export default (props) => {
   let swiperPage = [];
 
@@ -13,7 +14,7 @@ export default (props) => {
 
     for (let i = 0; i < props.props.albom.length; i++) {
       slide.push(
-        <SwiperSlide onClick={()=> props.props.modal(true)}>
+        <SwiperSlide className="modal_swiper_slide" onClick={()=> props.props.modal(true)}>
           <img src={props.props.albom[i]} alt="" />
         </SwiperSlide>
       );
