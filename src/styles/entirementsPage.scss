@@ -398,7 +398,7 @@ line-height: 16px;
     border-radius: 41px;
   }
   .Swiper_Module {
-    height: fit-content;
+    
     .swiper-button-prev,
     .swiper-button-next {
       display: none;
@@ -412,6 +412,9 @@ line-height: 16px;
     display: none;
   }
   .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       height: 100%;
       width: 100%;
@@ -444,6 +447,7 @@ line-height: 16px;
     max-width: 320px;
   }
   .swiper {
+    max-height: 70vh;
     margin-top: 0px;
     border-radius: 0px;
 

@@ -31,16 +31,16 @@ export default function AllEntertiments() {
     });
   });
 
-  const [moreCards, setMoreCard] = useState([]);
+  const [moreCards, setMoreCard] = useState();
 
   function moreCard() {
        let card = [];
-       if (moreCards.length != 10) {
+       if (moreCards == undefined) {
         for (let i = 10; i < 20; i++) {
           if (todos.length > 0) {
               card.push(
                 <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
-                  <div className={allEntirementsStyle.entertiment_card}>
+                  <div id={todos[i].id} className={allEntirementsStyle.entertiment_card}>
                     <Image link={todos[i].img}></Image>
                     <div className={allEntirementsStyle.gradiant}>
                       <div className={allEntirementsStyle.more_btn}>Деталі</div>
@@ -57,13 +57,14 @@ export default function AllEntertiments() {
             
           }
         }
+        setMoreCard(card);
        }else{
 
        
       for (let i = 20; i < todos.length; i++) {
         card.push(
           <NavLink key={todos[i].id + Math.random()} to={"/Page/" + todos[i].id} >
-            <div className={allEntirementsStyle.entertiment_card}>
+            <div id={todos[i].id} className={allEntirementsStyle.entertiment_card}>
               <Image link={todos[i].img}></Image>
               <div className={allEntirementsStyle.gradiant}>
                 <div className={allEntirementsStyle.more_btn}>Деталі</div>
@@ -85,9 +86,10 @@ export default function AllEntertiments() {
          allEntirementsStyle.entertiment_button +
          " " +
          allEntirementsStyle._disabled;
+         setMoreCard(prev => [...prev, card]);
     }
       
-       setMoreCard(card);
+      
     
       
   }

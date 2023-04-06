@@ -21,8 +21,8 @@
   border-radius: 24px;
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
@@ -347,12 +347,11 @@
 @media (min-width: 1200px) {
   .Swiper_Module {
     width: 80vw;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .Swiper_Module .swiper-button-prev,
-.Swiper_Module .swiper-button-next {
+  .Swiper_Module .swiper-button-next {
     display: block;
   }
 }
@@ -406,27 +405,27 @@
     background-position: 30px;
     border-radius: 41px;
   }
-  .Swiper_Module {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   .Swiper_Module .swiper-button-prev,
-.Swiper_Module .swiper-button-next {
+  .Swiper_Module .swiper-button-next {
     display: none;
   }
   .Swiper_Module .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 25px;
   }
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     display: none;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .swiper-slide img {
     height: 100%;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 45px;
@@ -452,6 +451,7 @@
     max-width: 320px;
   }
   .swiper {
+    max-height: 70vh;
     margin-top: 0px;
     border-radius: 0px;
     width: 100vw;
