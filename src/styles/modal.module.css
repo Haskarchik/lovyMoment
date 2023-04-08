@@ -101,6 +101,12 @@
 }
 
 @media (max-width: 425px) {
+  .modal {
+    display: none;
+  }
+  .modal_active {
+    display: none;
+  }
   .Modal {
     height: 100%;
     width: 100vh;
@@ -111,7 +117,7 @@
     height: 100%;
   }
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     display: none;
   }
 }
