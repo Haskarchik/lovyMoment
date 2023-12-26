@@ -6,8 +6,8 @@ export default function FooterInfo() {
     <div className="footer-infp-label">
       Телефонуйте <span> нам </span>
     </div>
-    <a href="tel:+38 (098) 069 26 22" className="phone-number">
-      +38 (098) 069 26 22</a
+    <a href="tel:+38 (097) 937 16 91" className="phone-number">
+      +38 (097) 937 16 91</a
     >
     <div className="footer-info-text footer-text">
       Ми приймаємо дзвінки кожного дня <br />

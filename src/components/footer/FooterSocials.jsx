@@ -9,17 +9,17 @@ export default function FooterSocials() {
     </div>
     <ul className="footer-socials-list">
       <li>
-        <a href="https://wa.me/380980692622">
+        <a href="https://wa.me/380979371691">
         <SvgSelectors id={'watsap'}/>Whatsapp
         </a>
       </li>
       <li>
-        <a href="viber://add?number=380980692622">
+        <a href="viber://add?number=380979371691">
         <SvgSelectors id={'viber'}/>Viber
         </a>
       </li>
       <li>
-        <a href="https://t.me/lovymomentlviv">
+        <a href="https://t.me/pavluyk">
         <SvgSelectors id={'telegram'}
           />Telegram
         </a>

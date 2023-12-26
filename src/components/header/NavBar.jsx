@@ -12,22 +12,22 @@ const NavBar = (props) => {
       </Link>
       <div className={header.header_contacts}>
         <ul className={header.socials}>
-          <li key='watsap'>
-            <a   href=" https://wa.me/380980692622">
+          <li key="watsap">
+            <a href=" https://wa.me/380979371691">
               <SvgSelectors className={header.social_icon} id="watsap" />
             </a>
           </li>
-          <li key='viber'>
-            <a href="viber://add?number=380980692622">
+          <li key="viber">
+            <a href="viber://add?number=380979371691">
               <SvgSelectors className={header.social_icon} id="viber" />
             </a>
           </li>
-          <li key='telegram'>
-            <a href="https://t.me/lovymomentlviv">
+          <li key="telegram">
+            <a href="https://t.me/pavluyk">
               <SvgSelectors className={header.social_icon} id="telegram" />
             </a>
           </li>
-          <li key='instagram'>
+          <li key="instagram">
             <a href="https://www.instagram.com/lovymomentlviv/">
               <SvgSelectors className={header.social_icon} id="instagram" />
             </a>
@@ -35,7 +35,7 @@ const NavBar = (props) => {
         </ul>
         <div className={header.tel_number}>
           <SvgSelectors className={header.social_icon} id="heandset" />
-          <a href="tel:+38 (098) 069 26 22">+38 (098) 069 26 22</a>
+          <a href="tel:+38 (097) 937 16 91">+38 (097) 937 16 91</a>
         </div>
       </div>
     </div>
