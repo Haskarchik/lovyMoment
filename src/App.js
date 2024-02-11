@@ -31,7 +31,7 @@ function App() {
   function updateData(name) {
     setLink(name);
   }
-
+  console.log(window.innerWidth);
   return (
     <div className="app">
       <Routes>
@@ -74,7 +74,7 @@ function App() {
         />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <Caller />
+    {window.innerWidth < 480 ?   <Caller />: ''}
       <Notification />
       <Footer />
     </div>
